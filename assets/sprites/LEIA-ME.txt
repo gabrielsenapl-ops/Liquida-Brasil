@@ -1,0 +1,57 @@
+PNGs OPCIONAIS QUE SUBSTITUEM OS SPRITES DO JOGO
+
+Ponha aqui um arquivo <nome>.png com um dos nomes abaixo e ele substitui o desenho
+procedural (feito por código em js/sprites.js), sem mexer em nada mais.
+Se o arquivo não existir ou falhar ao carregar, o jogo usa o desenho procedural.
+
+Regras:
+- Use o MESMO tamanho em pixels indicado (o jogo amplia sem suavizar, estilo pixel art).
+- Fundo transparente (PNG com canal alfa).
+- Paleta sugerida: as 16 cores do topo de css/style.css (não é obrigatório).
+- Funciona abrindo o index.html direto (file://), sem servidor.
+
+Retratos 16x16:
+  retrato_bolso.png  (16x16)
+  retrato_cofreaberto.png  (16x16)
+  retrato_principe.png  (16x16)
+  retrato_aposentadoriaalheia.png  (16x16)
+  retrato_quadradinho.png  (16x16)
+  retrato_partidoelastico.png  (16x16)
+  retrato_gaveta.png  (16x16)
+  retrato_calculadora.png  (16x16)
+  retrato_juristacaro.png  (16x16)
+  retrato_tofu.png  (16x16)
+  retrato_inquerito.png  (16x16)
+  retrato_bispo.png  (16x16)
+  retrato_barrapesada.png  (16x16)
+
+Inimigo 32x32 (um por faixa de Suspeita + fim):
+  inimigo_estagiario.png  (32x32)
+  inimigo_reporter.png  (32x32)
+  inimigo_delegado.png  (32x32)
+  inimigo_helicoptero.png  (32x32)
+  inimigo_fim.png  (32x32)
+
+Ícones 12x12:
+  icone_moeda.png  (12x12)
+  icone_termometro.png  (12x12)
+  icone_escudo.png  (12x12)
+  icone_jatinho.png  (12x12)
+  icone_claquete.png  (12x12)
+  icone_igreja.png  (12x12)
+  icone_pizza.png  (12x12)
+  icone_cavalo.png  (12x12)
+  icone_bolo.png  (12x12)
+  icone_cadeia.png  (12x12)
+  icone_jornal.png  (12x12)
+  icone_taca.png  (12x12)
+
+Janela do escritório (aeronaves que cruzam o céu):
+  jato_janela.png  (16x7)
+  helicoptero_janela.png  (14x8)
+
+Os retratos retrato_<id> usam o id de cada aliado em js/data.js; retrato_bolso é o banqueiro.
+
+## Corpos inteiros
+- `corpo_<id>` (16x30) é gerado em código por `gerarCorpos()` a partir do retrato (linhas 0-15) + tronco/pernas/sapatos. Fila da frente do escritório, boate e cofre usam corpo inteiro; o Banqueiro de Bolso e a fila de trás seguem sentados atrás da mesa (retrato).
+- Para desenhar à mão: assets/sprites/corpo_<id>.png (16x30) substitui o gerado.

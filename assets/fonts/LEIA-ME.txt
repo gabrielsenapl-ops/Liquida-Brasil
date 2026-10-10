@@ -1,0 +1,8 @@
+Fontes embutidas (funcionam sem internet e em file://). Todas sob a SIL Open Font License 1.1,
+que permite usar, embutir e redistribuir junto com o jogo.
+
+press-start-2p.woff2  Press Start 2P (CodeMan38)   títulos e botões grandes
+silkscreen.woff2      Silkscreen (Jason Kottke)    texto corrido
+vt323.woff2           VT323 (Peter Hull)            números grandes (saldo, minigames)
+
+Subconjunto "latin" (acentos do português incluídos). Licença: https://openfontlicense.org

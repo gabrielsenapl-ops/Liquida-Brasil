@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Liquida Brasil</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icones/apple-touch-icon.png">
+<meta name="theme-color" content="#c0282e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+<div id="stage" class="app">
+
+  <!-- Tela de abertura -->
+  <section id="tela-titulo" class="tela">
+    <canvas id="titulo-arte" width="320" height="120"></canvas>
+    <h1 class="titulo">LIQUIDA BRASIL</h1>
+    <p class="subtitulo">O Banqueiro de Vidro: transparente para quem paga, opaco para quem fiscaliza.</p>
+    <div class="titulo-botoes">
+      <div id="titulo-modo"></div>
+      <button class="cta" data-act="jogar">JOGAR</button>
+      <button class="btn" data-act="comojogar">Como jogar</button>
+      <button class="btn" data-act="minigames">Minigames</button>
+      <button class="btn" data-act="diario-abrir" id="btn-diario-titulo">Diário do Rombo</button>
+      <button class="btn" data-act="som" id="btn-som-titulo">Som: desligado</button>
+      <button class="btn" data-act="tema-ciclo" id="btn-tema-titulo">Tema: Auto</button>
+    </div>
+    <div id="titulo-recorde"></div>
+    <p class="aviso">Obra de ficção satírica. Qualquer semelhança é coincidência, e a Justiça segue investigando.</p>
+  </section>
+
+  <!-- Tela do jogo: app de banco (Início, Golpes, Aliados, Extrato; Opções no topo) -->
+  <section id="tela-jogo" class="tela oculto">
+    <header id="app-top" class="top"></header>
+    <div id="view" class="view">
+      <div id="painel-inicio" class="aba">
+        <div id="hud"></div>
+        <div id="cenario"><canvas id="cena" class="cena" width="310" height="300"></canvas><div id="cenario-bar" class="cen-bar"></div></div>
+        <div id="termometro"></div>
+        <div class="l">Proteção <span class="so-pc">(teclas 1-6)</span></div>
+        <div id="lista-acoes" class="grid6"></div>
+        <div id="previsao"></div>
+        <div id="calote-box"></div>
+        <div id="delatar-box"></div>
+        <button class="cta" id="btn-proximo" data-act="proximo">PRÓXIMO MÊS ▶</button>
+      </div>
+      <div id="painel-esq" class="aba"><div class="l rotulo-aba">Investimentos em alta</div><div id="lista-golpes"></div></div>
+      <div id="painel-dir" class="aba"><div class="l rotulo-aba">Seus gerentes de conta</div><div id="lista-aliados"></div></div>
+      <div id="painel-extrato" class="aba"><div id="diario-seg" class="seg"></div><div id="extrato" class="ext"></div><div id="paginas"></div></div>
+      <div id="painel-opcoes" class="aba"></div>
+    </div>
+    <nav id="abas" class="tab" aria-label="Seções"></nav>
+  </section>
+
+  <div id="modal" class="vel oculto"><div id="modal-corpo" class="folha"></div><button id="btn-fechar-grande" class="fechar-grande" data-act="fechar">FECHAR</button></div>
+  <div id="tutorial" class="oculto"></div>
+  <div id="flutuantes"></div>
+  <div id="toast"></div>
+  <div id="plantao" aria-live="polite"></div>
+  <div id="crt"></div>
+</div>
+
+<div id="debug" class="oculto"></div>
+<pre id="selftest" hidden></pre>
+
+<script src="js/data.js"></script>
+<script src="js/diario.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/bots.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/minigames.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

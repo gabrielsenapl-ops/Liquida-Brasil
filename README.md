@@ -1,0 +1,1 @@
+Liquida Brasil é uma sátira ficcional em pixel art. Personagens, empresas e situações são inventados. O jogo existe para informar e conscientizar: o Diário do Rombo mostra, em creches, UPAs e merenda, o que bilhões de reais em prejuízo bancário comprariam na vida real. Os fatos citados vêm de fontes públicas; acusações não são condenações.
